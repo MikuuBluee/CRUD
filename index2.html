@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karyawan</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Menu
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro minima ut rerum 
+                            blanditiis! Iusto maiores ex temporibus, molestias itaque consequuntur minima esse, quaerat 
+                            quidem corporis provident perferendis earum vitae.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Tambah Data Karyawan
+                    </div>
+                    <div class="card-body " id="formInput">
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">NIK</label>
+                            <input type="number" class="form-control" id="nik">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Masa Kerja</label>
+                            <input type="number" class="form-control" id="masaKerja">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-info" onclick="tambahKaryawan()">Submit</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="cancel()">Cancel</button>
+                    </div>
+                </div>
+                
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Daftar Data Karyawan
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-secondary table-hover" id="tblKaryawan">
+                            <thead>
+                              <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">NIK</th>
+                                <th scope="col">Masa Kerja</th>
+                                <th scope="col">Gaji</th>
+                                <th scope="col">Delete/Edit</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                              <tr>
+                                <th scope="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="arrayKaryawan.js"></script>
+</body>
+</html>

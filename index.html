@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Siswa</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        Menu
+                    </div>
+                    <div class="card-body">
+
+                        <div class="list-group">
+                            <a href="" class="list-group-item">Daftar Siswa</a>
+                            <a href="" class="list-group-item">Tambah Siswa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="card">
+                    <div class="card-header">
+                        Tambah Siswa
+                    </div>
+                    <div class="card-body" id="formInput">
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Jenis Kelamin</label>
+                            <select class="form-control" id="jenKel">
+                                <option value="">Pilih Jenis Kelamin</option>
+                                <option value="L">Laki-Laki</option>
+                                <option value="P">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Umur</label>
+                            <input type="number" class="form-control" id="umur">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Warna Favorit</label>
+                            <select class="form-control" id="wFavorit">
+                                <option value="">Pilih Warna Favorit</option>
+                                <option value="Merah">Merah</option>
+                                <option value="Kuning">Kuning</option>
+                                <option value="Hijau">Hijau</option>
+                                <option value="Biru">Biru</option>
+                                <option value="Coklat">Coklat</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-success" onclick="tambahSiswa()">Submit</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="cancel()">Cancel</button>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Data Siswa
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <table class="table table-secondary table-hover" id="tblSiswa">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Nama</th>
+                                    <th scope="col">Jenis Kelamin</th>
+                                    <th scope="col">Umur</th>
+                                    <th scope="col">Warna Favorit</th>
+                                    <th scope="col">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="arrayAndObject.js"></script>
+</body>
+</html>
